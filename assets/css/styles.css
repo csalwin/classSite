@@ -1,0 +1,98 @@
+/*
+
+Reset Normalise Style
+
+ */
+
+
+
+/* HTML styles */
+body {
+    font-family: sans-serif;
+    font-size: smaller;
+    color: #AAAAAA;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
+div img {
+    width: 100%;
+
+}
+
+a{
+
+    color: #999999;
+    text-decoration: none;
+}
+
+a:visited{
+
+}
+
+a:link{
+
+
+}
+
+a:active{
+
+}
+
+a:hover{
+    color: #FF0000
+}
+
+header ul {
+    list-style: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 24px
+
+
+}
+
+header li {
+    width: 140px;
+    float: left;
+    display: inline;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+
+
+}
+
+
+header a{
+    background-color: #3300FF;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+header a:hover {
+
+    background-color: #999999;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* Class styles */
+
+
+
+/* ID Styles */
+
+
+
+/* Styles For other devices or larger Displays*/

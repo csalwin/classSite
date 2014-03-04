@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8"/>
     <title>Welcome to Arrow media</title>
+    <link href="assets/css/styles.css" rel="stylesheet" media="all" />
 </head>
 <body>
 <header>
-
+                <h1>Contact</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,7 +20,7 @@
         </nav>
 </header>
 <div id="content">
-    <h1>Contact</h1>
+
     <article>
         <table border="4">
             <caption>Pauls Contact Details</caption>
@@ -101,45 +102,67 @@
 
 
 
-        <form method="get" action="http://webdesignstudents.co.uk/students/response.php">
-            <p>
-                <label for="contactname">Name:</label>
-                <input type="text" name="contactname" id="contactname"/>
-            </p>
-            <p>
-                <label for="contactemail">Email:</label>
-                <input type="text" name="contactemail" id="contactemail"/>
-            </p>
-            <p>
-            <label>
-                Gender:
-                    <input type="radio" name="gender" value="male" checked/>Male
-                    <input type="radio" name="gender" value="female"/>Female
-            </label>
-            </p>
 
-            <p>
+            <form method="get" action="http://webdesignstudents.co.uk/students/response.php">
+                <table>
 
-            <label for="location">Location:</label>
+                        <tr>
+                            <td><label for="contactname">Name:</label></td>
+                            <td><input type="text" name="contactname" id="contactname" required/></td>
+                        </tr>
 
-                <select name="location" id="location">
-                    <option value="Brighton" selected>Brighton &amp; Hove</option>
-                    <option value="Worthing">Worthing</option>
-                    <option value="Dorking">Dorking</option>
-                </select>
-            </p>
+                        <tr>
+                            <td><label for="contactemail">Email:</label></td>
+                            <td><input type="email" name="contactemail" id="contactemail" required/></td>
+                        </tr>
 
-            <p>
+                        <tr>
 
-                <label for="comment">Comment:</label>
-                <textarea name="comment" id="comment" cols="18" rows="8"></textarea>
-            </p>
-            <p>
-                <input type="submit" name="submit" value="send"/>
-            </p>
+                            <label>
+                                <td>
+                                    Gender:
+                                </td>
+                                <td>
+                                    <input type="radio" name="gender" value="male" checked/>Male
+                                    <input type="radio" name="gender" value="female"/>Female
+                                </td>
+                            </label>
 
-        </form>
+                        </tr>
 
+
+                        <tr>
+                            <td>
+                                <label for="location">Location:</label>
+                            </td>
+                            <td>
+                                <select name="location" id="location">
+                                    <option value="Brighton" selected>Brighton &amp; Hove</option>
+                                    <option value="Worthing">Worthing</option>
+                                    <option value="Dorking">Dorking</option>
+                                </select>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <label for="comment">Comment:</label>
+                            </td>
+                            <td>
+                                <textarea name="comment" id="comment" cols="18" rows="8" required ></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td> <!--colspan="2"-->
+                             <input type="submit" name="submit" value="send"/>
+                            </td>
+                        </tr>
+
+                </table>
+            </form>
 
 
     </article>
