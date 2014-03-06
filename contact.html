@@ -1,9 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8"/>
     <title>Welcome to Arrow media</title>
     <link href="assets/css/styles.css" rel="stylesheet" media="all" />
+    <style>
+        form.table {
+            display: table;
+            width: 800px;
+            margin: 24px auto;
+
+        }
+        label.row {
+            display: table-row;
+        }
+        .cell {
+            display: table-cell;
+            width: 75%;
+        }
+        span.cell{
+            width: 25%;
+        }
+
+
+    </style>
 </head>
 <body>
 <header>
@@ -99,9 +119,41 @@
 
         </table>
 
+        <form class="table" method="get" action="http://webdesignstudents.co.uk/students/response.php">
+            <label class="row">
+                <span class="cell">*Name:</span>
+                <input class="cell" type="text" name="contactname" required />
+            </label>
+            <label class="row">
+                <span class="cell">Email:</span>
+                <input class="cell" type="email" name="contactemail" />
+            </label>
+            <label class="row">
+                <span class="cell">Gender</span>
+                    <span class="cell">
+                    <input type="radio" name="gender" value="male" checked>Male
+                    <input type="radio" name="gender" value="female">Female
+                    </span>
+            </label>
+            <label class="row" for="location">
+                <span class="cell">Location:</span>
+                <select class="cell" name="location" id="location">
+                    <option value="Brighton" selected>Brighton &amp; Hove</option>
+                    <option value="Worthing">Worthing</option>
+                    <option value="Dorking">Dorking</option>
+                </select>
+            </label>
+            <label class="row">
+                <span class="cell">*Comment</span>
+                <textarea class="cell" name="comment" cols="20" rows="8" required></textarea>
+            </label>
+            <label class="row">
+                <span class="cell">*Required Information</span>
+                <input class="cell" type="submit" name="submit"/>
+            </label>
+        </form>
 
-
-
+<!--
 
             <form method="get" action="http://webdesignstudents.co.uk/students/response.php">
                 <table>
@@ -156,14 +208,13 @@
 
                         <tr>
                             <td>&nbsp;</td>
-                            <td> <!--colspan="2"-->
+                            <td> <!--colspan="2"--><!--
                              <input type="submit" name="submit" value="send"/>
                             </td>
                         </tr>
 
                 </table>
-            </form>
-
+            </form> -->
 
     </article>
 

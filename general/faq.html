@@ -3,20 +3,81 @@
 <head>
     <meta charset="utf-8"/>
     <title>Welcome to Arrow media</title>
+    <link href="../assets/css/styles.css" rel="stylesheet" media="all" />
+    <style>
+
+        form.table {
+            display: table;
+            width: 800px;
+            margin: 24px auto;
+
+        }
+        label.row {
+            display: table-row;
+        }
+        .cell {
+            display: table-cell;
+            width: 75%;
+        }
+        span.cell{
+            width: 25%;
+        }
+        input, textarea {
+            width: 100%;
+        }
+
+
+
+
+    </style>
+
 </head>
 <body>
-<h1>Frequently Asked Questions</h1>
-<ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../about.html">About</a></li>
-    <li><a href="../portfolio">Portfolio</a></li>
-    <li><a href="../packages/index.html">Packages</a></li>
-    <li><a href="../news.html">News</a></li>
-    <li><a href="../contact.html">Contact</a></li>
-</ul>
-<ul>
-    <li><a href="../general/terms.html">Terms &amp; Conditions</a></li>
-    <li><abbr title="Frequently Asked Questions"><a href="../general/faq.html">FAQ</a></abbr></li>
-</ul>
+<header><!-- Start Of Header-->
+    <h1>Terms and Conditions</h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../portfolio/index.html">Portfolio</a></li>
+            <li><a href="../packages/index.html">Packages</a></li>
+            <li><a href="../news.html">News</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header><!--End Of Header-->
+<div id="content" class="container">
+
+
+    <form class="table" method="get" action="http://webdesignstudents.co.uk/students/response.php">
+        <label class="row">
+            <span class="cell">*Name:</span>
+            <input class="cell" type="text" name="contactname" required />
+        </label>
+        <label class="row">
+            <span class="cell">Email:</span>
+            <input class="cell" type="email" name="contactemail" />
+        </label>
+        <label class="row">
+            <span class="cell">*Comment</span>
+            <textarea class="cell" name="comment" cols="20" rows="8" required></textarea>
+        </label>
+        <label class="row">
+            <span class="cell">*Required Information</span>
+            <input class="cell" type="submit" name="submit"/>
+        </label>
+    </form>
+
+
+</div>
+
+<footer> <!-- Start of footer-->
+    <nav>
+        <ul>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><abbr title="Frequently Asked Questions"><a href="faq.html">FAQ</a></abbr></li>
+        </ul>
+    </nav>
+</footer> <!--End Of footer-->
 </body>
 </html>

@@ -10,6 +10,9 @@ body {
     margin: 0 auto;
 
 }
+header footer {
+    clear: both;
+}
 
 a{
     color: #999999;
@@ -71,6 +74,14 @@ div img {
     width: 100%;
 
 }
+
+section div.subsection{
+    width: 460px;
+    margin: 24px 10px;
+    float: left;
+
+}
+
 
 /*
 footer ul {
