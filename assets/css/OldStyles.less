@@ -1,0 +1,61 @@
+@import "normalize.css";
+
+@page: 960px;
+@basecolor: #336699;
+@lightcolor: lighten(@basecolor,35%);
+@darkcolor: darken(@basecolor,10%);
+
+.gradient(@light,@dark) {
+  -webkit-background-image: linear-gradient(@light,@dark);
+  -moz-background-image: linear-gradient(@light,@dark);
+  -ms-background-image: linear-gradient(@light,@dark);
+  -o-background-image: linear-gradient(@light,@dark);
+  background-image: linear-gradient(@light,@dark);
+}
+
+
+body {
+  width: @page;
+  color: @basecolor;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+header{
+  .gradient(@lightcolor,@darkcolor);
+  width: @page;
+  margin: 0;
+
+  h1 {
+    color: @darkcolor;
+  }
+
+  nav{
+    .gradient(#FFFFFF,#888888);
+    ul{
+      height: 24px;
+      li{
+        width: @page/6;
+        float: left;
+
+        a{
+          color: @darkcolor;
+          text-decoration: none;
+          text-align: center;
+          padding: 4px 0;
+          display: block;
+
+          &:hover {
+            .gradient(#777777,#FFFFFF);
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+img {
+  width: @page;
+}

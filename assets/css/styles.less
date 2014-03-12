@@ -1,0 +1,195 @@
+@import "normalize.css";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+
+@basecolor: #663333;
+@lightcolor: lighten(@basecolor,35%);
+@darkcolor: darken(@basecolor,10%);
+
+
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+
+
+}
+
+header{
+  width: 100%;
+
+
+  h1{
+    text-align: center;
+    padding: 0 0 13px 0;
+    width: 100%;
+    color: @basecolor;
+  }
+    nav{
+      background-color: @darkcolor;
+
+      ul{
+
+
+        li{
+
+          background-color: @darkcolor;
+          width: 100%;
+          float: left;
+          list-style: none;
+          margin: 3px auto;
+
+          a{
+
+            color: @lightcolor;
+            text-decoration: none;
+            text-align: center;
+            padding: 20px 0;
+
+            display: block;
+
+          }
+        }
+      }
+    }
+
+
+}
+
+img {
+  width: 480px;
+}
+
+footer{
+  width: 100%;
+
+
+  h1{
+    text-align: center;
+    padding: 0 0 13px 0;
+    width: 100%;
+    color: @basecolor;
+  }
+  nav{
+    background-color: @darkcolor;
+
+    ul{
+
+
+      li{
+
+        background-color: @darkcolor;
+        width: 100%;
+        float: left;
+        list-style: none;
+        margin: 3px auto;
+
+        a{
+
+          color: @lightcolor;
+          text-decoration: none;
+          text-align: center;
+          padding: 20px 0;
+
+          display: block;
+
+        }
+      }
+    }
+  }
+
+
+}
+
+
+/* Tablet Css */
+
+@media(min-width: 750px){
+  @page-size:750px;
+  body{
+    width: @page-size;
+  }
+
+
+  header{
+    display: block;
+    width: @page-size;
+    height: auto;
+
+    h1{
+      float: left;
+      text-align: left;
+      width: @page-size*0.30;
+      margin: 24px 0 ;
+    }
+    nav{
+
+      ul{
+        float: left;
+        width: @page-size*0.70;
+        li{
+          width: 32%;
+          margin: 3px 3px;
+
+
+          a{
+
+          }
+        }
+      }
+    }
+  }
+
+
+
+ section + section {
+    h3{
+      width: 100%;
+      text-align: right;
+    }
+    img{
+      width: @page-size/3;
+      float: left;
+    }
+    p{
+      width: @page-size;
+
+
+    }
+  }
+
+.subsection {
+  width: @page-size;
+  img{
+    padding-right: 30px;
+    padding-bottom: 150px;
+  }
+}
+
+
+
+
+
+footer{
+  nav{
+    ul{
+      li{
+        width: @page-size/2;
+        float: left;
+          a{
+            width: @page-size/2;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+/* Desktop CSS */
+
+
+

@@ -1,0 +1,156 @@
+
+
+@import "normalize.css";
+
+/* HTML styles */
+
+/*mobile*/
+
+
+
+
+
+
+body {
+    font: smaller/ 160% sans-serif;
+    color: #AAAAAA;
+    /*
+    max-width: 960px;
+    */
+    margin: 0 auto;
+
+}
+header footer {
+    clear: both;
+}
+
+a{
+    color: #999999;
+    text-decoration: none;
+}
+
+a:visited{
+
+}
+
+a:link{
+
+}
+
+a:active{
+
+}
+
+a:hover{
+    color: #FF0000
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 24px 0;
+    height: 24px;
+}
+
+nav li {
+    width: 46%;
+    float: left;
+    margin: 0 2%;
+
+}
+
+
+nav a{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #333333;
+    display: block;
+    padding:5px 0;
+
+}
+
+nav a:hover {
+    color: #333333;
+    background-color: #999999;
+}
+
+h1 {
+    padding: 24px 10px;
+
+}
+
+div img {
+    width: 100%;
+
+}
+
+section .subsection{
+    width: 96%;
+    margin: 2% 2%;
+    float: left;
+
+}
+
+
+/*
+footer ul {
+
+    padding: 0;
+    margin: 24px 0;
+    height: 24px;
+    list-style: none;
+}
+
+Same as the header ul so put both in one term saving code making the page load faster
+*/
+
+footer li {
+    width: 46%;
+
+}
+
+footer p {
+    padding: 10px;
+}
+
+/* Class styles */
+
+
+
+/* ID Styles */
+
+
+
+/* Styles For other devices or larger Displays*/
+
+/*medium displays*/
+
+@media(min-width: 768px) {
+
+    nav li {
+        width: 12.66%;
+    }
+
+    footer li {
+        width: 46%;
+    }
+
+}
+
+@media (min-width: 960px) {
+
+    body {
+        max-width: 960px;
+    }
+
+    section .subsection {
+        width: 46%;
+        margin: 24px 2%;
+    }
+
+
+
+
+
+}
