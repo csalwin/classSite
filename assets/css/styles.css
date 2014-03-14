@@ -1,112 +1,149 @@
 @import "normalize.css";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+#page {
+  position: relative;
+  width: 100%;
+  left: auto;
+  right: auto;
+  margin-top: 36px;
+}
 body {
-  font-family: 'Open Sans', sans-serif;
+  font: 14px/1.5 'Open sans', sans-serif;
+  color: #113366;
+  width: 100%;
   margin: 0 auto;
 }
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
 header {
-  width: 100%;
+  background-color: #113366;
 }
 header h1 {
+  font-size: 24px;
+  padding: 20px;
+  background: #75a3e8;
   text-align: center;
-  padding: 0 0 13px 0;
+}
+header nav li {
   width: 100%;
-  color: #663333;
-}
-header nav {
-  background-color: #442222;
-}
-header nav ul li {
-  background-color: #442222;
-  width: 100%;
-  float: left;
-  list-style: none;
-  margin: 3px auto;
-}
-header nav ul li a {
-  color: #c48888;
-  text-decoration: none;
   text-align: center;
-  padding: 20px 0;
+}
+header nav li a {
   display: block;
+  padding: 6px 0;
+  background-color: #113366;
+  color: #5f94e4;
+  text-decoration: none;
 }
-img {
-  width: 480px;
+section {
+  clear: both;
+}
+section h2 {
+  font-size: 24px;
+  padding: 24px 0;
+}
+section p img {
+  width: 100%;
+}
+section.second p {
+  margin: 24px 16px;
+}
+section.second p a {
+  color: #205fbd;
+  text-decoration: none;
+  font-weight: 600;
+}
+section.second p img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 footer {
-  width: 100%;
+  clear: both;
 }
-footer h1 {
-  text-align: center;
-  padding: 0 0 13px 0;
-  width: 100%;
-  color: #663333;
-}
-footer nav {
-  background-color: #442222;
-}
-footer nav ul li {
-  background-color: #442222;
-  width: 100%;
+footer li {
+  width: 50%;
   float: left;
-  list-style: none;
-  margin: 3px auto;
-}
-footer nav ul li a {
-  color: #c48888;
-  text-decoration: none;
   text-align: center;
-  padding: 20px 0;
+}
+footer li a {
   display: block;
+  padding: 6px 0;
+  background-color: #113366;
+  color: #5f94e4;
+  text-decoration: none;
 }
 /* Tablet Css */
 @media (min-width: 750px) {
   body {
+    font-size: 16px;
     width: 750px;
   }
   header {
-    display: block;
-    width: 750px;
-    height: auto;
+    clear: both;
   }
   header h1 {
+    width: 290px;
     float: left;
-    text-align: left;
-    width: 225px;
-    margin: 24px 0 ;
+    padding: 34px 20px;
   }
-  header nav ul {
-    float: left;
-    width: 525px;
+  header nav {
+    width: 420px;
+    float: right;
   }
-  header nav ul li {
-    width: 32%;
-    margin: 3px 3px;
-  }
-  section + section h3 {
-    width: 100%;
-    text-align: right;
-  }
-  section + section img {
-    width: 250px;
+  header nav li {
+    width: 140px;
     float: left;
   }
-  section + section p {
-    width: 750px;
+  header nav li a {
+    padding: 14px 0;
   }
-  .subsection {
-    width: 750px;
+  section {
+    clear: both;
   }
-  .subsection img {
-    padding-right: 30px;
-    padding-bottom: 150px;
-  }
-  footer nav ul li {
-    width: 375px;
+  section.second p {
+    width: 290px;
     float: left;
   }
-  footer nav ul li a {
-    width: 375px;
+  section.second p + p {
+    width: 396px;
+    float: right;
+  }
+  section div {
+    clear: both;
+  }
+  footer nav ul + ul {
+    position: absolute;
+    top: -36px;
+    right: 0px;
+  }
+  footer nav ul + ul li {
+    width: 140px;
   }
 }
 /* Desktop CSS */
+@media (min-width: 960px) {
+  body {
+    width: 960px;
+  }
+  header h1 {
+    width: 290px;
+    padding: 8px 20px;
+    text-align: left;
+  }
+  header nav {
+    width: 630px;
+  }
+  header nav li {
+    width: 105px;
+  }
+  section.second p + p {
+    width: 606px;
+  }
+  footer nav ul + ul {
+    right: 0;
+  }
+}

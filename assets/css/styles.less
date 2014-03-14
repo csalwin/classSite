@@ -1,195 +1,198 @@
 @import "normalize.css";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
 
-@basecolor: #663333;
-@lightcolor: lighten(@basecolor,35%);
-@darkcolor: darken(@basecolor,10%);
-
-
-
-
-body{
-    font-family: 'Open Sans', sans-serif;
-    margin: 0 auto;
-
+@basecolor: #113366;
+#page{
+  position: relative;
+  width: 100%;
+  left: auto;
+  right: auto;
+  margin-top: 36px;
 
 }
 
-header{
+body{
+  font: 14px/1.5 'Open sans', sans-serif;
+  color: @basecolor;
   width: 100%;
+  margin: 0 auto;
+}
+h1,h2,h3 {
+  font-weight: 600;
+}
 
-
+header{
+  background-color: @basecolor;
   h1{
+    font-size: 24px;
+    padding: 20px;
+    background: lighten(@basecolor, 45%);
     text-align: center;
-    padding: 0 0 13px 0;
-    width: 100%;
-    color: @basecolor;
   }
     nav{
-      background-color: @darkcolor;
-
-      ul{
-
-
         li{
-
-          background-color: @darkcolor;
           width: 100%;
-          float: left;
-          list-style: none;
-          margin: 3px auto;
+          text-align: center;
 
           a{
-
-            color: @lightcolor;
-            text-decoration: none;
-            text-align: center;
-            padding: 20px 0;
-
             display: block;
-
+            padding: 6px 0;
+            background-color: @basecolor;
+            color: lighten(@basecolor, 40%);
+            text-decoration: none;
           }
         }
       }
     }
 
 
+
+
+section {
+  clear: both;
+  h2{
+    font-size: 24px;
+    padding: 24px 0;
+  }
+  p img {
+    width: 100%;
+  }
+  &.second p {
+    margin: 24px 16px;
+    a{
+      color: lighten(@basecolor, 20%);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    img {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+    }
+  }
 }
 
-img {
-  width: 480px;
-}
 
 footer{
-  width: 100%;
-
-
-  h1{
-    text-align: center;
-    padding: 0 0 13px 0;
-    width: 100%;
-    color: @basecolor;
-  }
-  nav{
-    background-color: @darkcolor;
-
-    ul{
-
+  clear: both;
 
       li{
-
-        background-color: @darkcolor;
-        width: 100%;
+        width: 50%;
         float: left;
-        list-style: none;
-        margin: 3px auto;
+        text-align: center;
 
         a{
-
-          color: @lightcolor;
-          text-decoration: none;
-          text-align: center;
-          padding: 20px 0;
-
           display: block;
+          padding: 6px 0;
+          background-color: @basecolor;
+          color: lighten(@basecolor, 40%);
+          text-decoration: none;
 
         }
       }
     }
-  }
 
 
-}
 
 
 /* Tablet Css */
 
 @media(min-width: 750px){
-  @page-size:750px;
   body{
-    width: @page-size;
+    font-size: 16px;
+    width: 750px;
+
   }
 
 
   header{
-    display: block;
-    width: @page-size;
-    height: auto;
+    clear: both;
+
+
 
     h1{
+      width: 290px;
       float: left;
-      text-align: left;
-      width: @page-size*0.30;
-      margin: 24px 0 ;
+      padding: 34px 20px;
     }
     nav{
-
-      ul{
-        float: left;
-        width: @page-size*0.70;
+      width: 420px;
+      float: right;
         li{
-          width: 32%;
-          margin: 3px 3px;
-
-
+          width: 140px;
+          float: left;
           a{
-
+            padding: 14px 0;
           }
         }
       }
     }
+
+
+
+section {
+  clear: both;
+  &.second p{
+    width: 290px;
+    float: left;
   }
-
-
-
- section + section {
-    h3{
-      width: 100%;
-      text-align: right;
-    }
-    img{
-      width: @page-size/3;
-      float: left;
-    }
-    p{
-      width: @page-size;
-
-
-    }
+  &.second p+p{
+    width: 396px;
+    float: right;
   }
-
-.subsection {
-  width: @page-size;
-  img{
-    padding-right: 30px;
-    padding-bottom: 150px;
+  div{
+    clear: both;
   }
 }
-
-
-
-
-
-footer{
+footer {
   nav{
-    ul{
-      li{
-        width: @page-size/2;
-        float: left;
-          a{
-            width: @page-size/2;
-          }
-        }
-      }
+    ul+ul{
+      position: absolute;
+      top: -36px;
+      right: 0px;
     }
+
+     ul+ul li{
+      width: 140px;
+    }
+
   }
 }
-
-
-
-
+}
 
 /* Desktop CSS */
 
+@media (min-width: 960px) {
+  body {
+    width: 960px;
+
+  }
+  header{
+    h1{
+      width: 290px;
+      padding: 8px 20px;
+      text-align: left;
+
+    }
+    nav {
+      width: 630px;
+      li{
+        width: 105px;
+      }
+    }
+  }
+  section {
+   &.second p+p{
+     width: 606px;
+   }
+  }
+  footer{
+    nav{
+      ul+ul{
+        right: 0;
+      }
+    }
+  }
+}
 
 
