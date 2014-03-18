@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Toggle Menu 1!</title>
+    <script>
+        function hideItems(){
+            currItem = document.getElementsByTagName('ul');
+            for(i=0;i<currItem.length;i++){
+                if(currItem[i].className == 'hidden'){
+                    currItem[i].style.display = 'none';
+                }
+            }
+
+        }
+        var oldMenu = null;
+        function toggleMenu(menuID){
+            currMenu = document.getElementById(menuID);
+            if (currMenu.style.display == 'block'){
+                currMenu.style.display = 'none';
+            } else{
+                if (oldMenu){
+                    oldMenu.style.display = 'none';
+                }
+                currMenu.style.display = 'block';
+                oldMenu = currMenu;
+            }
+            return false;
+        }
+
+
+    </script>
+
+</head>
+<body onload="hideItems(),toggleMenu('top')">
+<h1>Toggle Menu 1!</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#" onclick="toggleMenu('top')">Menu 2</a>
+            <ul class="hidden" id="top">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            </li>
+            <li><a href="#">Menu 3</a></li>
+            <li><a href="www.google.com"  onclick="return toggleMenu('bottom')">Menu 4</a>
+            <ul class="hidden" id="bottom">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            </li>
+        </ul>
+    </nav>
+
+<h2>
+    Content is here
+</h2>
+</body>
+</html>
