@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="no-js" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8"/>
+    <title>JavaScript Gallery</title>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1"/>
+    <script src="modernizr.custom.08337.js"></script>
+
+
+
+    <style>
+        body{
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        #page{
+            width: 960px;
+            position: relative;
+            top: 0;
+            right: auto;
+            left: auto;
+        }
+        p img {
+            width: 100%;
+        }
+        .thumbnail{
+            width: 100px;
+
+        }
+        .preview{
+            position: absolute;
+            top: 230px;
+            left: 250px;
+            width: 300px;
+        }
+        footer {
+            position: relative;
+            top: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="page" class="container">
+        <header>
+            <h1>Example JavaScript Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../about.html">About</a></li>
+                    <li><a href="../../portfolio/index.html">Portfolio</a></li>
+                    <li><a href="../../packages/index.html">Packages</a></li>
+                    <li><a href="../../news.html">News</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="content" class="container">
+            <h2>Adele and John's Gallery - Click thumbnail to View</h2>
+            <div class="gallery">
+            <p class="thumbnail"><a href="#" onclick="return toggleItem('gallone')"><img src="../../portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding1.jpg"/></a></p>
+            <p class="preview" id="one"><a href="#"><img src="../../portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding1.jpg"/></a></p>
+            <p class="thumbnail"><a href="#" onclick="return toggleItem('galltwo')"><img src="../../portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding2.jpg"/></a></p>
+            <p class="preview" id="two"><a href="#"><img src="../../portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding2.jpg"/></a></p>
+            <p class="thumbnail"><a href="#" onclick="return toggleItem('gallthree')"><img src="../../portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding3.jpg"/></a></p>
+            <p class="preview" id="three"><a href="#"><img src="../../portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding3.jpg"/></a></p>
+            <p class="thumbnail"><a href="#" onclick="return toggleItem('gallfour')"><img src="../../portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding4.jpg"/></a></p>
+            <p class="preview" id="four"><a href="#"><img src="../../portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding4.jpg"/></a></p>
+            </div>
+        </div>
+
+        <footer>
+
+            <nav>
+                <ul>
+                    <li><a href="../../general/terms.html">Terms &amp; Conditions</a></li>
+                    <li><abbr title="Frequently Asked Questions"><a href="../../general/faq.html">FAQ</a></abbr></li>
+                </ul>
+            </nav>
+            <p>All images &copy;2014 Arrow Photography. All rights reserved.</p>
+        </footer>
+
+</div>
+<script src="../libs/min/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('p.preview:not(:first)').hide();
+        $('p.thumbnail a').click(function(){
+            $('p.preview').hide();
+            $(this).parent().next().show(600);
+        })
+    })
+</script>
+</body>
+</html>
