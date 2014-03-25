@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width: device-width;inital-scale=1"/>
     <title>Welcome to Arrow Photography</title>
+    <script src="assets/js/min/modernizr.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
 
 
@@ -25,8 +26,15 @@
     </header><!--End Of Header-->
     <div id="content" class="container"><!--Start Of Content--> 
         <section class="first"><!--Start of First Section-->
-        <p>
+        <p class="slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="2000" >
+
+
+
             <img src="assets/images/ArrowPhotograhyFrontPage1.jpg" alt="Wedding Picture"/>
+            <img src="assets/images/ArrowPhotograhyFrontPage2.jpg" alt="Wedding Picture"/>
+            <img src="assets/images/ArrowPhotograhyFrontPage3.jpg" alt="Wedding Picture"/>
+            <img src="assets/images/ArrowPhotograhyFrontPage4.jpg" alt="Wedding Picture"/>
+            <img src="assets/images/ArrowPhotograhyFrontPage5.jpg" alt="Wedding Picture"/>
 
         </p>
    
@@ -89,7 +97,19 @@
         <li><a href="#">RSS</a></li>
     </ul>
     </nav>
+        <p>
+            &copy;2000-2014 Arrow Photography. All rights reserved.
+        </p>
 </footer> <!--End Of footer-->
     </div>
+<script src="assets/libs/min/jquery.min.js"></script>
+<script src="assets/js/cycle2/cycle2.js"></script>
+<script src="assets/js/cycle2/flip.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.slideshow').cycle();
+    })
+</script>
 </body>
 </html>
