@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="assets/js/ImageSlider/bluImp/css/blueimp-gallery.min.css">
+    <link  href="assets/js/ImageSlider/fotorama/fotorama.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/js/ImageSlider/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <link href="assets/js/ImageSlider/lightbox2/css/lightbox.css" rel="stylesheet" />
+    <link href="assets/js/ImageSlider/flipster/css/jquery.flipster.css" rel="stylesheet" />
+
+
+    <title>Jquery Tester</title>
+
+    <style>
+        body{
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .blueimp-gallery-carousel{
+            width:960px;
+            height: auto;
+        }
+        .GalleryImages img{
+            width: 20%;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio/index.html">Portfolio</a></li>
+                <li><a href="packages/index.html">Packages</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>bluImp</h1>
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+
+    <div id="content">
+        <section>
+            <section class="first">
+                <p>
+                <div class="GalleryImages">
+                    <div id="links">
+                    <a href="assets/images/ArrowPhotograhyPortfolio1.jpg" title="Image"><img src="assets/images/ArrowPhotograhyPortfolio1.jpg" alt="Portfolio picture 1"></a>
+                    <a href="assets/images/ArrowPhotograhyPortfolio2.jpg" title="Image"><img src="assets/images/ArrowPhotograhyPortfolio2.jpg" alt="Portfolio picture 1"></a>
+                    <a href="assets/images/ArrowPhotograhyPortfolio3.jpg" title="Image"><img src="assets/images/ArrowPhotograhyPortfolio3.jpg" alt="Portfolio picture 1"></a>
+                    <a href="assets/images/ArrowPhotograhyPortfolio4.jpg" title="Image"><img src="assets/images/ArrowPhotograhyPortfolio4.jpg" alt="Portfolio picture 1"></a>
+                </div>
+
+            </div>
+                </p>
+            </section>
+
+
+
+
+
+
+            <section class="GalleryImages">
+                <h1>FamcyBox</h1>
+
+                <a class="fancybox" rel="group" href="assets/images/ArrowPhotograhyPortfolio1.jpg"><img src="assets/images/ArrowPhotograhyPortfolio1.jpg" alt="" /></a>
+                <a class="fancybox" rel="group" href="assets/images/ArrowPhotograhyPortfolio2.jpg"><img src="assets/images/ArrowPhotograhyPortfolio2.jpg" alt="" /></a>
+                <a class="fancybox" rel="group" href="assets/images/ArrowPhotograhyPortfolio3.jpg"><img src="assets/images/ArrowPhotograhyPortfolio3.jpg" alt="" /></a>
+                <a class="fancybox" rel="group" href="assets/images/ArrowPhotograhyPortfolio4.jpg"><img src="assets/images/ArrowPhotograhyPortfolio4.jpg" alt="" /></a>
+            </section>
+
+
+            <section>
+
+                <h1>lightbox2</h1>
+                <div class="GalleryImages">
+                    <a href="assets/images/ArrowPhotograhyPortfolio1.jpg" data-lightbox="roadtrip"><img src="assets/images/ArrowPhotograhyPortfolio1.jpg" alt="Portfolio picture 1"></a>
+                    <a href="assets/images/ArrowPhotograhyPortfolio2.jpg" data-lightbox="roadtrip"><img src="assets/images/ArrowPhotograhyPortfolio2.jpg" alt="Portfolio picture 1"></a>
+                    <a href="assets/images/ArrowPhotograhyPortfolio3.jpg" data-lightbox="roadtrip"><img src="assets/images/ArrowPhotograhyPortfolio3.jpg" alt="Portfolio picture 1"></a>
+                    <a href="assets/images/ArrowPhotograhyPortfolio4.jpg" data-lightbox="roadtrip"><img src="assets/images/ArrowPhotograhyPortfolio4.jpg" alt="Portfolio picture 1"></a>
+
+
+
+                </div>
+
+
+            </section>
+
+            <section>
+
+                <h1>bluImp Carousel</h1>
+                <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+                    <div class="slides"></div>
+                    <h3 class="title"></h3>
+                    <a class="prev">‹</a>
+                    <a class="next">›</a>
+                    <a class="play-pause"></a>
+                    <ol class="indicator"></ol>
+                </div>
+
+
+            </section>
+
+            <h1>fotorama</h1>
+
+            <section>
+                <div class="fotorama" data-nav="thumbs" data-keyboard="true" data-loop="true" data-arrows="false"
+                     data-click="true"
+                     data-swipe="true">
+                    <img src="assets/images/ArrowPhotograhyPortfolio1.jpg" alt="Portfolio picture 1">
+                    <img src="assets/images/ArrowPhotograhyPortfolio2.jpg" alt="Portfolio picture 1">
+                    <img src="assets/images/ArrowPhotograhyPortfolio3.jpg" alt="Portfolio picture 1">
+                    <img src="assets/images/ArrowPhotograhyPortfolio4.jpg" alt="Portfolio picture 1">
+                </div>
+            </section>
+
+
+            <section>
+                <h1>Flipster</h1>
+                <div class="coverflow">
+                    <ul>
+                        <li>
+                            <div> <img src="assets/images/ArrowPhotograhyPortfolio1.jpg"> </div>
+                        </li>
+                        <li>
+                            <div> <img src="assets/images/ArrowPhotograhyPortfolio2.jpg"> </div>
+                        </li>
+                        <li>
+                            <div> <img src="assets/images/ArrowPhotograhyPortfolio3.jpg"> </div>
+                        </li>
+                        <li>
+                            <div> <img src="assets/images/ArrowPhotograhyPortfolio4.jpg"> </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+
+        </section>
+    </div>
+
+    <footer>
+
+        <nav>
+            <p>All images &copy;2014 Arrow Photography. All rights reserved.</p>
+
+            <ul>
+                <li><a href="general/terms.html">Terms &amp; Conditions</a></li>
+                <li><abbr title="Frequently Asked Questions"><a href="general/faq.html">FAQ</a></abbr></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="assets/libs/min/jquery.min.js"></script>
+    <script src="assets/js/ImageSlider/bluImp/js/blueimp-gallery.min.js"></script>
+    <script src="assets/js/ImageSlider/fotorama/fotorama.js"></script>
+    <script type="text/javascript" src="assets/js/ImageSlider/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="assets/js/ImageSlider/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script src="assets/js/ImageSlider/lightbox2/js/lightbox-2.6.min.js"></script>
+    <script src="assets/js/ImageSlider/flipster/js/jquery.flipster.js"></script>
+
+
+
+
+    <script>
+        document.getElementById('links').onclick = function (event) {
+            event = event || window.event;
+            var target = event.target || event.srcElement,
+                    link = target.src ? target.parentNode : target,
+                    options = {index: link, event: event},
+                    links = this.getElementsByTagName('a');
+            blueimp.Gallery(links, options);
+        };
+    </script>
+
+    <script>
+        blueimp.Gallery(
+                document.getElementById('links').getElementsByTagName('a'),
+                {
+                    container: '#blueimp-gallery-carousel',
+                    carousel: true
+                }
+        );
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $(".fancybox")
+                    .attr('rel', 'gallery')
+                    .fancybox({
+                        beforeShow: function () {
+                            /* Disable right click */
+                            $.fancybox.wrap.bind("contextmenu", function (e) {
+                                return false;
+                            });
+                        }
+                    });
+        });
+
+    </script>
+
+
+    <script>
+        $(document).ready( function() {
+            $(".coverflow").flipster();
+        });
+    </script>
+
+
+
+
+</body>
+</html>
