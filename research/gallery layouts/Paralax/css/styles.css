@@ -1,0 +1,82 @@
+@import url('normalize.css');
+
+/* Mobile first */
+/* Redefine HTML styles 00# */
+body{
+    font: smaller/160% sans-serif;
+    color: #999999;
+    margin: 0 auto;
+}
+header,footer{
+	clear: both;
+}
+nav ul{
+    text-align: center;
+    padding: 0;
+    margin: 24px 0;
+    height: 24px;
+    list-style: none;
+}
+nav li{
+    width: 46%;
+    float: left;
+    margin: 0 2%;
+}
+nav a{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #333333;
+    display: block;
+    padding: 5px 0;
+}
+nav a:hover{
+    background-color: #999999;
+    color: #333333;
+}
+footer li{
+     width: 46%;
+ }
+h1{
+    padding: 24px 10px;
+}
+
+div img{
+    width: 100%;
+	display: block;
+}
+footer p{
+    padding: 10px;
+}
+/* Class based styles 0#0 */
+section .subsection{
+	width: 96%;
+	margin: 24px 2%;
+	float: left;
+}
+/* ID based styles #00 */
+
+
+/* Lanscape mobile / tablet screens */
+@media(min-width: 768px){
+	nav li{
+		width: 12.66%;
+	}
+	footer li{
+	     width: 46%;
+	 }
+}
+
+/* Landscape tablet / desktop screen */
+@media(min-width: 940px){
+	body{
+		max-width: 960px;
+	}
+	section .subsection{
+		width: 46%;
+	}
+}
+
+
+
+
+
