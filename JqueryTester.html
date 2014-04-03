@@ -3,11 +3,13 @@
 <head>
     <meta charset="utf-8"/>
     <title>Jquery Tester</title>
+    <link rel="stylesheet" href="assets/css/stylesOld.css">
     <link rel="stylesheet" href="assets/js/ImageSlider/bluImp/css/blueimp-gallery.min.css">
     <link  href="assets/js/ImageSlider/fotorama/fotorama.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/js/ImageSlider/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
     <link href="assets/js/ImageSlider/lightbox2/css/lightbox.css" rel="stylesheet" />
     <link href="assets/js/ImageSlider/flipster/css/jquery.flipster.css" rel="stylesheet" />
+
 
 
 
@@ -29,21 +31,31 @@
 
     </style>
 </head>
-<body>
+<body onload="hideItem('ul')">
     <header>
         <h1>Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio/index.html">Portfolio</a></li>
-                <li><a href="packages/index.html">Packages</a></li>
-                <li><a href="news.html">News</a></li>
+                <li><a href="JqueryTester.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#" onclick="return toggleItem('two')">Portfolio</a>
+                    <ul class="hidden" id="two">
+                        <li>Portrait</li>
+                        <li>Portfolio</li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="return toggleItem('one')">Packages</a>
+                    <ul class="hidden" id="one">
+                        <li>Wedding</li>
+                        <li>Portrait</li>
+                    </ul>
+                </li>
+                <li><a href="#">News</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <h2>bluImp</h2>
+
     <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
         <div class="slides"></div>
         <h3 class="title"></h3>
@@ -57,6 +69,7 @@
     <div id="content">
         <section>
             <section class="first">
+                <h2>bluImp</h2>
                 <p>
                 <div class="GalleryImages">
                     <div id="links">
@@ -75,11 +88,13 @@
 
 
 
+
+
             <section class="GalleryImages">
                 <h2>FancyBox</h2>
 
-                <a class="fancybox" rel="group" href="assets/images/ArrowPhotograhyPortfolio1.jpg"><img src="assets/images/ArrowPhotograhyPortfolio1.jpg" alt="" /></a>
-                <a class="fancybox" rel="group" href="assets/images/ArrowPhotograhyPortfolio2.jpg"><img src="assets/images/ArrowPhotograhyPortfolio2.jpg" alt="" /></a>
+                <a class="fancybox"  href="assets/images/ArrowPhotograhyPortfolio1.jpg"><img src="assets/images/ArrowPhotograhyPortfolio1.jpg" alt="" /></a>
+                <a class="fancybox"  href="assets/images/ArrowPhotograhyPortfolio2.jpg"><img src="assets/images/ArrowPhotograhyPortfolio2.jpg" alt="" /></a>
                 <a class="fancybox" rel="group" href="assets/images/ArrowPhotograhyPortfolio3.jpg"><img src="assets/images/ArrowPhotograhyPortfolio3.jpg" alt="" /></a>
                 <a class="fancybox" rel="group" href="assets/images/ArrowPhotograhyPortfolio4.jpg"><img src="assets/images/ArrowPhotograhyPortfolio4.jpg" alt="" /></a>
             </section>
@@ -166,6 +181,9 @@
         </nav>
     </footer>
 
+    <script src="assets/js/js/testShow-working.js"></script>
+
+
     <script src="assets/libs/min/jquery.min.js"></script>
     <script src="assets/js/ImageSlider/bluImp/js/blueimp-gallery.min.js"></script>
     <script src="assets/js/ImageSlider/fotorama/fotorama.js"></script>
@@ -200,9 +218,7 @@
     <script type="text/javascript">
         $(document).ready(function() {
 
-            $(".fancybox")
-                    .attr('rel', 'gallery')
-                    .fancybox({
+            $(".fancybox").fancybox({
                         beforeShow: function () {
                             /* Disable right click */
                             $.fancybox.wrap.bind("contextmenu", function (e) {

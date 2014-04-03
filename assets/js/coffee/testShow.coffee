@@ -7,6 +7,7 @@ toggleItem = (currID) ->
     oldElement.style.display = 'none' if oldElement
     currElement.style.display = 'block'
     oldElement = currElement
+    return false
 
 
 hideItem = (currEle) ->

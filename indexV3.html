@@ -5,7 +5,10 @@
     <meta name="viewport" content="width: device-width;inital-scale=1"/>
     <title>Welcome to Arrow Photography</title>
     <script src="assets/js/min/modernizr.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+
+
 
 
 
@@ -18,14 +21,16 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#" onclick="return toggleItem('two')">Portfolio</a>
-            <ul class="hidden" id="two">
-                <li>Portrait</li>
-                <li>Portfolio</li>
-            </ul>
+            <li><a href="#">Portfolio</a>
+                <ul>
+                    <li>Portrait</li>
+                    <li>Portfolio</li>
+
+                </ul>
             </li>
-            <li><a href="#" onclick="return toggleItem('one')">Packages</a>
-                <ul class="hidden" id="one">
+
+            <li><a href="#">Packages</a>
+                <ul>
                     <li>Wedding</li>
                     <li>Portrait</li>
                 </ul>
@@ -35,7 +40,24 @@
         </ul>
         </nav>
     </header><!--End Of Header-->
-    <div id="content" class="container"><!--Start Of Content--> 
+
+
+
+
+    <ul class="menu">
+        <li>
+            <a href="#">Dropdown</a>
+            <ul>
+                <li><a href="#">Some Action 1</a></li>
+                <li><a href="#">Some Action 2</a></li>
+                <li><a href="#">Some Action 3</a></li>
+                <li><a href="#">Some Action 4</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+
 
     </div><!--End Of Content-->
 
@@ -54,10 +76,10 @@
             &copy;2000-2014 Arrow Photography. All rights reserved.
         </p>
 </footer> <!--End Of footer-->
-    </div>
 
-<script src="assets/js/js/testShow-working.js"></script>
 
+
+<script src="assets/libs/min/jquery.min.js"></script>
 
 </body>
 </html>
