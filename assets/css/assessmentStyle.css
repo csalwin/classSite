@@ -1,0 +1,90 @@
+@import "reset.css";
+
+#page {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+body {
+    font: 14px/1.5 'Open sans', sans-serif;
+    color: #113366;
+    width: 100%;
+    margin: 0 auto;
+}
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+header {
+    background: -webkit-linear-gradient(#61a8ff, #444444); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#61A8FF, #444444); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#61A8FF, #444444); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#61A8FF, #444444); /* Standard syntax */
+}
+
+header h1 {
+    font-size: 24px;
+    padding: 20px;
+    background: #75a3e8;
+    text-align: center;
+}
+header nav li {
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+}
+header nav li a {
+    display: block;
+    padding: 6px 0;
+    background-color: #113366;
+    color: #5f94e4;
+    text-decoration: none;
+}
+
+
+
+
+@media (min-width: 750px) {
+
+    #page {
+        width: 750px;
+        font-size: 16px;
+    }
+    header {
+        clear: both;
+        display: block;
+    }
+    header h1 {
+        width: 290px;
+        float: left;
+        padding: 34px 20px;
+    }
+    header nav {
+
+        width: 420px;
+        float: right;
+    }
+    header nav li {
+
+        min-width: 105px;
+        width: auto;
+        float: left;
+        align-content: center;
+        display: table;
+        table-layout: fixed;
+    }
+    header nav li a {
+        padding: 14px 0;
+        display: table-cell;
+        text-align: center;
+
+    ;
+
+    }
+
+}

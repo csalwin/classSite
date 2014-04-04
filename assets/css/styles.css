@@ -41,6 +41,7 @@ header nav li a {
 section {
   clear: both;
 }
+
 section h2 {
   font-size: 24px;
   padding: 24px 0;
@@ -61,6 +62,12 @@ section.second p img {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
+
+/*Hiding Slideshow in mobile device*/
+p.slideshow {
+    display: none;
+}
+
 footer {
   clear: both;
 }
@@ -114,6 +121,10 @@ footer li a {
   }
   section div {
     clear: both;
+  }
+  /*show slide show in tablets and desktop*/
+  p.slideshow {
+      display: block;
   }
   footer nav ul + ul {
     position: absolute;
