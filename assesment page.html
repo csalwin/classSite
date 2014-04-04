@@ -4,6 +4,9 @@
     <meta charset="utf-8"/>
     <title>Assessment Page</title>
     <link href="assets/css/assessmentStyle.css" rel="stylesheet" type="text/css" media="screen">
+
+
+
 </head>
 <body>
 <div id="page" class="container">
@@ -11,20 +14,23 @@
         <h1>Assessment Page</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Process</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Technologies</a></li>
-                <li><a href="#">Showcase</a></li>
-                <li><a href="#">Contact</a></li>
-
+                <div id="topRowNav"><!--Seperating navigation for tablet use first row-->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Process</a></li>
+                    <li><a href="#">Services</a></li>
+                </div>
+                <div id="sndRowNav"><!--Seperating navigation for tablet use second row-->
+                    <li><a href="#">Technologies</a></li>
+                    <li><a href="#">Showcase</a></li>
+                    <li><a href="#">Contact</a></li>
+                </div>
             </ul>
         </nav>
     </header>
     <div id="content" class="container">
         <section>
-            <div id="slideshow">
+            <div class="cycle-slideshow">
 
                 <img src="assets/images/ArrowPhotograhyFrontPage1.jpg" alt="Wedding Picture"/>
                 <img src="assets/images/ArrowPhotograhyFrontPage2.jpg" alt="Wedding Picture"/>
@@ -56,6 +62,7 @@
 
     </footer>
 </div>
-
+<script src="assets/libs/min/jquery.min.js"></script>
+<script src="assets/js/cycle2/cycle2.js"></script>
 </body>
 </html>

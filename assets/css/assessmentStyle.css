@@ -36,7 +36,7 @@ header h1 {
 header nav li {
     width: 100%;
     text-align: center;
-    font-size: 19px;
+    font-size: 16px;
 }
 header nav li a {
     display: block;
@@ -45,10 +45,13 @@ header nav li a {
     color: #5f94e4;
     text-decoration: none;
 }
+.cycle-slideshow{
+    display: none;
+}
 
 
 
-
+/*for Tablet users */
 @media (min-width: 750px) {
 
     #page {
@@ -62,7 +65,7 @@ header nav li a {
     header h1 {
         width: 290px;
         float: left;
-        padding: 34px 20px;
+        padding: 18px 20px;
     }
     header nav {
 
@@ -74,17 +77,67 @@ header nav li a {
         min-width: 105px;
         width: auto;
         float: left;
-        align-content: center;
-        display: table;
-        table-layout: fixed;
+
     }
     header nav li a {
-        padding: 14px 0;
-        display: table-cell;
-        text-align: center;
+        padding: 6px 0;
+    }
 
-    ;
-
+    #sndRowNav li {  /*To make the navigation appear on two seperate rows with the correct spacing*/
+        width: 140px;
+    }
+    .cycle-slideshow{
+        display: block;
+        position: relative;
+        top: 72px;
+    }
+    .cycle-slideshow img {
+        width: 750px;
     }
 
 }
+
+/*for Desktop Users*/
+@media (min-width: 960px) {
+    #page {
+        width: 960px;
+    }
+    header{
+
+        width: 960px;
+    }
+    header h1{
+        width: 220px;
+        height: 42px;
+    }
+    header nav {
+        width: 700px;
+
+    }
+
+    header nav li {
+
+        min-width: 90px;
+
+        background-color: #113366;
+
+    }
+
+    header nav li a {
+        margin: 21px 0px;
+    }
+
+    #sndRowNav li{
+        width: 113px;
+    }
+    .cycle-slideshow{
+        display: block;
+        position: relative;
+        top: 78px;
+    }
+
+    .cycle-slideshow img {
+        width: 960px;
+    }
+}
+
